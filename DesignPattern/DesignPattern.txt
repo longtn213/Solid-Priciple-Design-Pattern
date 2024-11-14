@@ -1,0 +1,47 @@
+Design Principles 
+	- Design Principles (Such as SOLID principles) are high level guidelines to design resable software applications
+	- pure abstractions - without implementation or programming language 
+	- They can be applies in any programming languages
+	- These principles are platform independent
+	
+Design Patterns
+	- Design patterns are the low-level solutions of frequent object-oriented programming (OOP) related problems
+	- It is the concrete implementation
+	- Several design principle can be implemented by design patterns
+	- Design patterns are tested by others - these techniques are state-of-the-art problem specific solutions
+	
+***Design Principles : allow scalable and maintable software architectures  <=> Design patterns : are more about how to design you code + concrete implementations of the design principles
+
+There are 3 types of design patterns:
+	+) Creational Patterns : These patterns are designed for class instantiation( class creational patterns and object creational patterns ) 
+	+) Structural Patterns : These patterns are designed for class structure (How to increase the functionality of a class ) 
+	+) Behavioral Patterns : These patterns are dealing with how to communicate effectively between given classes
+	
+I. CREATIONAL PATTERNS :
+	1. Singleton Pattern: 
+		- It lets you ensure that a class has only one instance while providing a global access point to this instance
+		- It ensures that a given class has just a single instance
+		- The singleton pattern provides a global access point to that given instance
+		- We can control access to a shared resource such as files , databases or thread pools (when dealing with multithreading) 
+		- It is extremely crucial in logging 
+		* Trong Singleton pattern thì giúp chúng ta triển khai 1 đối tượng duy nhất trong toàn bộ chương trình mà cho phép tất cả các đối tượng khác đều truy cập vào cùng 1 Instance đó. 
+		
+		+) Nhưng sẽ gặp vấn đề trong multiple thread vì mỗi lần 1 thread truy cập thì sẽ tạo ra đồng thời các instance khác nhau nên phá vỡ tính duy nhất singleton. 
+			- Cách giải quyết 1: Chúng ta có thể giải quyết bằng synchronized để đảm bảo chỉ có 1 luồng duy nhất nhưng sẽ làm chậm quá trình truy cập do phải kiểm tra khóa mỗi lần truy cập
+			- Cách giải quyết 2: sử dụng Enum để khởi tạo vì nó là compile time constant nên mặc định là thread safe
+		
+	2. Factory Pattern: We should favor abstraction (supertypes) instead of concrete implementations.We can instantiate the classes in a separate class
+		- Factory pattern helps to create loosely coupled OOP design
+		- There is a fundamental problem with the new keyword
+		- Whenever we use the new keyword ( and instantiate a class ) we definitely violate this principle
+		- typing out code concrete classes makes the application less flexible and more fragile
+		
+		+) Abstract Factory Pattern :
+			- Factories that creates other factories  (factories of the factories )
+			- It is an interface is responsible for creating a factory of related objects without explicity specifying their classes
+		
+		
+		
+	3. Builder Pattern:
+	4. Prototype Pattern:
+	
