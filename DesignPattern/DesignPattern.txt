@@ -66,8 +66,25 @@ I. CREATIONAL PATTERNS :
 		Disadvantage : khó thực hiện sao chép sâu ( deep copy ) , quản lý các đối tượng phức tạp
 
 II. BEHAVIORAL PATTERNS:
-	1. Strategy pattern
-	2. Observer pattern
+	1. Strategy pattern : 
+		- this extremely closer close/open priciple
+		- strategy pattern ( or policy pattern) enable selecting an algorithm at run time
+		- define a family of algorithms, put each of them into a separate class, and make their objects interchangeable
+		- Favor composition over inhertitance : 
+			+) Inheritance ( IS A relationship every class can extend a single class in java) <-> Composition ( HAS A relationship every class can have several instance encapsulated variable + give more flexibility)
+		Advantages:
+			+) we can use if-else statements instead of the strategy pattern but it is hard to test these statements
+			+) every single possible branch of the application increases the cyclomatic complex of the software
+		* cyclomatic complex : It is a quantitative measure of the number of linerly independent paths through a program's source code
+	
+	2. Observer pattern : 
+		- the observer pattern defines a one -to-many dependency between given objects or enities
+		- so that when one object changes state all of its dependents are notified and updated automatically
+		- the subject is the object that is being monitored
+		- observers (or listeners) are depending on the subject
+		 
+		* a loosely coupled software system: A lossely coupled system is when the software components has very little or no knowledge of the definitions of other separate components
+		
 	3. Command pattern
 	4. Iterator pattern
 	5. Template pattern
