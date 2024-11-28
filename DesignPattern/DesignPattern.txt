@@ -85,9 +85,28 @@ II. BEHAVIORAL PATTERNS:
 		 
 		* a loosely coupled software system: A lossely coupled system is when the software components has very little or no knowledge of the definitions of other separate components
 		
-	3. Command pattern
-	4. Iterator pattern
-	5. Template pattern
+	3. Command pattern: is a behavioral design pattern that helps in encapsulating a request as an object, allowing for parameterization of clients with queues, requests, and operations
+		- There are 4 components : 
+			+) Command: it knows about receiver and invokes a method of the receiver. The values for paramters of the receiver method are store
+			+) Receiver : it does the work itself
+			+) Invoker : knows how to execute a command and optionally does bookkeeping about the command execution. The invoker does not know anything about a concrete command it knows only about command interface
+			+) Client: the client decides which commands to execute. To execute a command it passes the command object to the invoker object
+		Advantages of Command pattern: 
+			+) We can decouple classes that invoke the operations and the classes that will execute these operation: Loosely coupled design + single responsible
+			+) We can add futher commands without modifying existing code : open/closed principle
+			+) We do not have to execute the commands immediately - we can store these commands in a data structure : We can implement undo/ redo operations 
+			
+		
+	4. Iterator pattern: is a behavioral design pattern that provides a way to access elements of a collection sequentially without exposing its underlying representation.
+	
+	5. Template pattern :is a behavioral design pattern that defines the skeleton of an algorithm in a base class but allows subclasses to override specific steps of the algorithm without changing its structure
+		+) Defining an Algorithm: The Template Method is a method in a base class that outlines the steps of an algorithm and controls its flow, calling other methods that can be defined in subclasses.
+		+) Reusability: Common code is placed in the base class, promoting code reuse among subclasses. This decreases code duplication and enforces a consistent structure.
+		+) Control Over Changes: The base class can control the overall process while allowing subclasses to customize or extend certain steps, providing flexibility in changing behaviors.
+		+) Ease of Maintenance: As changes to the algorithm's structure are centralized in the base class, it simplifies maintenance. Subclasses can focus on implementation details instead.
+		+) Encapsulation of Variability: By defining the invariant parts of the algorithm in the template method, 
+		the pattern cleanly encapsulates variation in subclasses, ensuring they can extend functionality without affecting the algorithm's core.
+	
 	6. Null Object pattern
 	7. Visitor pattern
 	
