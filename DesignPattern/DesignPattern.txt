@@ -107,7 +107,35 @@ II. BEHAVIORAL PATTERNS:
 		+) Encapsulation of Variability: By defining the invariant parts of the algorithm in the template method, 
 		the pattern cleanly encapsulates variation in subclasses, ensuring they can extend functionality without affecting the algorithm's core.
 	
-	6. Null Object pattern
-	7. Visitor pattern
+	6. Null Object pattern : is a design pattern used in software development, particularly in OOP. Its purpose is to avoid null references and the potential for NullPointerExceptions 
+			by Introduceing a special class that behaves like a "null" object but provides a default behaviors
+		+) Advantages : 
+			- Eliminates null checks
+			- Enhances code readability
+	
+	7. Visitor pattern : is a way of separating an algorithm from an object structure on which it operates
+		+) Advantages
+			- Decouples Operations from Elements: can add new operations without altering existing classes
+			- Promotoes the Open/Closed Principle : new visitor classes can be created for new operations without modification of existing code
+			- Improves Code Organization : Helps in keeping operations and behavior separate, leading to more maintainable code
+	
+III. STRUCTURAL PATTERN	
+	1. Decorator pattern: that allows behavior to be added to individual objects dynamically, without affecting the behavior of other objects from the same class.
+		This pattern is particularly useful for adhering to the Single Responsibility Principle, as it enables functionality to be separated among different class.
+		+) Advantages:
+			- Flexibility : can add or remove functionality at runtime without affecting other object
+			- Better code organization: Enhances code organization by separating behavior into different decorators.
+			- Adheres to SOLID principle: support Open/Closed Principle, allowing the system to be extended with new behaviors through decorators
+		
+	2. Facade pattern: that provides a simplified interface to a complex subsytems. It hides the complexities of the subsytems by creating a unified interface that makes the subsytems easier to use
+		+) Advantages: 
+			- Simplification : Provides a simple interface to a complex system , making it easier to use
+			- Decoupling : Reduces dependencies between the client and the subsystems, promoting loose coupling
+			- Easier maintenance: Changes made to the subsystem do not affect the client code, as it interacts only with the Facade.
+	
+	3. Adapter pattern:
+	
+	
+	* Ghi lại các cách triển khai của từng pattern
 	
 	
