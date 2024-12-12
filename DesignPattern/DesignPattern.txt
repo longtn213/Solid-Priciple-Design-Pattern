@@ -133,6 +133,12 @@ III. STRUCTURAL PATTERN
 			- Decoupling : Reduces dependencies between the client and the subsystems, promoting loose coupling
 			- Easier maintenance: Changes made to the subsystem do not affect the client code, as it interacts only with the Facade.
 	
+	3. Flyweight Pattern: that aims to reduce the memory footprint ò applications by sharing common parts of state between when dealing with a large number of similar objects, 
+			as it enables you to minimize the overhead associated with their creation
+		+) Advantages: 
+			- Memory Efficiency : reduce the memory footprint by sharing state
+			- Performance Improvement: Fewer instances of classes mean less overhead on object creation and management
+	
 	3. Adapter pattern:
 	
 	
