@@ -139,9 +139,25 @@ III. STRUCTURAL PATTERN
 			- Memory Efficiency : reduce the memory footprint by sharing state
 			- Performance Improvement: Fewer instances of classes mean less overhead on object creation and management
 	
-	3. Adapter pattern:
-	
-	
-	* Ghi lại các cách triển khai của từng pattern
+	3. Adapter pattern: allows  objects with incompatible interfaces to collaborate and work together. 
+		It acts as a bridge between two incompatible interfaces
+		It is often used to make existing classes work with others without modifying their source code
+		+) Advantages:
+			- Flexibility: Allows you to reuse existing software components even if they do not fit into your desired interface.
+			- Simplifies Code: Reduces the need for complex switch statements or manually changing code for different interfaces
+			- Promotes Code Reusability: Makes your code easier to maintain and extend by allowing new classes to be compatible with the existing system
+	4. Model-View-Controller (MVC) Pattern: separate application logic into three three interconnected components. This separate  helps manage complexity and promotes organied code
+		Model : it includes all data and its related logic ( data access objects, model classes, databases)
+		View: handles user interations (GUI) and presents the data to the user ( user interface relate components : button, text fields etc...)
+		Controller : an abstract layer between the view and the model
+		+) Advantages:
+			- Sepatation of Concerns : Each component handle a distinct part of the functionality, making the code easier to manager and test
+			- Reusability : Components can be reused across different parts of the application, enhancing maintainability.
+			- Scalability : allows for easy scaling and modification, as changes in one component have minimal impact on others
+		+) Disadvantage: 
+			- Model and view are decoupled but they are not independent
+			- When the model changes frequently - we have to update the views as well
+			- The view takes some time to render
+			- In modern web applications or smartphones applications ther are an enormous number of interations
 	
 	

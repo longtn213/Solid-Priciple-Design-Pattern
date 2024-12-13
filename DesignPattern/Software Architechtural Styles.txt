@@ -1,0 +1,32 @@
+IV. SOFTWARE ARCHITECTURAL STYLES
+	1. Monolithic architecture: a traditional software design approach where an application where an application is built as a single, indivisible unit. 
+		In this architecture, all components of the application including the user interface, business logic, and database access, are combined into a single codebase
+		+) Characteristics of Monolithic Architecture:
+			- Single Codebase: All functionalities are encapsulated within one cohesive unit, making it straghtforward to develop and deploy.
+			- Tighly Coupled Components: The components within a monolith are interconnected, meaning changes in one part ofren necessiate changes in other
+			- Uniform Technology Stack : Typpically, a single technology stack is used throughtout the application
+		+) Benefit:
+			- Simplicity : Easier to develope, test, and deploy owing to a unified codebase
+			- Performance : Generally better performance duo to lower latency since components interact through in-memory calls rather than network calls
+			- Ease of Developement: everyone can understand because everything in one place
+		+) Challenges :
+			- Scalability Issues: Scaling is often all-or-nothing, meaning you have to scale the entire application, which can be inefficient
+			- Deployment Complications : Even small changes require application, increasing the risk of downtime
+			- Technical Debt: during time with application grows, it become to difficult to maintain and innovate duo to its complexity
+		
+	2. Microservices architecture : an application is broken down into smaller , independent services that communicate with each other. 
+		Each service is focused on a specific business functionality and can be developed, deployed, and scaled individually
+		+) Characteristics of Microservices Architecture:
+			- Independency : Each microservice can be developed and deployed independtly of others
+			- Decentralized Data Management : Each service managers its own database, leading to better data encapsulation and less interference between services
+			- Technology Agonostic : Different services can be built using different programming languages, framework, and data stores depending on their needs
+		+) Benefit:
+			- Scalability : Microservices can be individually scaled based on demand leading to more effcient resource use
+			- Resilience : if one service fails , it does not affect the entire application, enhancing overall reliability
+			- Faster Time to Market: Smaller , independent teams can work on different services, allowing for faster development cycles and deployment
+			- Easier updates and Maintenance : Changes can be made to individual services without requiring a complete redeployment of the application
+		+) Challenges :
+			- Complexity: Managing multiple services can lead to increased complexity, especially in communication and data consistency.t
+			- Deployment Overhead: Each service requires independent deployment and monitoring, which can complicate the DevOps process
+			- Inter-Service Communication: Microservices need to communicate over a network, which can introduce latency and potential points of failure.
+			- Consistency and Transactions: Maintaining data consistency across distributed services can be challenging.
