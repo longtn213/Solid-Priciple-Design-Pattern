@@ -146,6 +146,7 @@ III. STRUCTURAL PATTERN
 			- Flexibility: Allows you to reuse existing software components even if they do not fit into your desired interface.
 			- Simplifies Code: Reduces the need for complex switch statements or manually changing code for different interfaces
 			- Promotes Code Reusability: Makes your code easier to maintain and extend by allowing new classes to be compatible with the existing system
+	
 	4. Model-View-Controller (MVC) Pattern: separate application logic into three three interconnected components. This separate  helps manage complexity and promotes organied code
 		Model : it includes all data and its related logic ( data access objects, model classes, databases)
 		View: handles user interations (GUI) and presents the data to the user ( user interface relate components : button, text fields etc...)
@@ -159,5 +160,13 @@ III. STRUCTURAL PATTERN
 			- When the model changes frequently - we have to update the views as well
 			- The view takes some time to render
 			- In modern web applications or smartphones applications ther are an enormous number of interations
+	5. Service Locator Pattern: is a design pattern used in software architecture that aims to reduce the dependency between components by providing a central point (The locator) to obtain service instances
+		+) Advantages:
+			- Decoupling: Reduces coupling between clients and services. Clients do not know need know how to instantiate services or their concrete classes
+			- Centralized Configuration: Managing service instances in one place simplifies configuration and changes
+			- Ease of Testing : Services can be mocked during unit test
+		+) JNDI (Java Naming and Directory Interface) : Allows Java software clients to discover and look up data and object via a name
+			- It is an API :independent of any implementation ~ it is implemented with service locator pattern usually
+			
 	
 	
